@@ -1,0 +1,14 @@
+name: Working Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Echo test
+        run: echo "Everything is working"
